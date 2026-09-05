@@ -1,3 +1,3 @@
 带上下标的trime主题aurum.trime.yaml
 
-<img width="1080" height="972" alt="Image" src="https://github.com/user-attachments/assets/863c9e8d-5091-48a0-9e67-26190c8c355d" />
+<img width="1080" height="1455" alt="Image" src="https://github.com/user-attachments/assets/d16ecf2f-008f-45bc-9b52-2b609a8e9831" />
