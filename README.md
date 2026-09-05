@@ -72,7 +72,7 @@ patch:
 
 ### 2. 字体
 
-![字体分布图](http://imgsrc.baidu.com/forum/pic/item/8a198e51f3deb48f5b268967f71f3a292cf5781b.jpg)
+![字体分布图](https://github.com/user-attachments/assets/542c1429-33e0-434c-8bd7-0752612628b7)
 
 -   `text_font`: 编码字体
 -   `label_font`: 悬浮窗候选项序号字体
