@@ -1266,7 +1266,7 @@ preset_keys:
   Mode_switch:
     functional: false
     send: Mode_switch
-    states: ["中文", "西文"]
+    states: ["CN", "EN"]
     toggle: ascii_mode
   MoeDict:
     command: run
@@ -1417,12 +1417,12 @@ preset_keys:
   Zdic: {label: 漢典, send: function, command: run, option: "https://zdic.net/search/?q=%1$s"} #搜索網頁: %s或者%1$s爲當前字符
   YouDao: {label: 'ic@magnify', send: function, command: run, option: "https://dict.youdao.com/result?word=%4$s&lang=en"} #查看網頁: run 網址
   Zenkaku_Hankaku:
-    send: Mode_switch
+    send: Punct_switch
     states: ["半角", "全角"]
     toggle: full_shape
   clipboard_window:
     command: clipboard_window
-    label: "🅅"
+    label: "🅅"   # label: "🅅"
     # 剪切板
     option: 0
     send: function
@@ -1775,41 +1775,43 @@ style:
   text_font: latin.ttf
   vertical_gap: 12
  
-#顶部bar
+#顶部 bar
 tool_bar:
-  ascii_mode_button:
-    action: Mode_switch
-    foreground: {font_size: 18, option_styles: ["中", En], padding: 10}
+  button_spacing: 15
   back_style: "ic@arrow-left"
-  button_font: iconfont.ttf
-  button_spacing: 5
-  buttons:
-    - {action: Hide, foreground: {normal: candidate_text_color, style: "ic@keyboard_close"}}
-    - {action: liquid_keyboard_emoji, foreground: {style: "ic@emoticon"}}
-    - {action: clipboard_window, foreground: {style: "ic@clipboard"}}
-    - {action: Keyboard_editor, foreground: {style: "ic@cursor_text"}}
-    - {action: Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
-    - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}}
-  clipboard_button:
-    action: clipboard_window
-    foreground: {style: "ic@clipboard"}
-  edit_button:
-    action: Keyboard_editor
-    foreground: {style: "ic@cursor_text"}
-  emoji_button:
-    action: liquid_keyboard_emoji
-    foreground: {style: "ic@emoticon"}
-  full_shape_button:
-    action: Zenkaku_Hankaku
-    foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}
-  hide_button:
-    action: Hide
-    foreground: {normal: candidate_text_color, style: "ic@keyboard_close"}
+  button_font: iconfont.ttf  
+  # 右侧按钮列表（从右向左排列）
+  buttons: [ *hide_button, *emoji_button, *clipboard_button, *edit_button, *ascii_mode_button ]
+  # buttons:
+    # - {action: Hide, foreground: {normal: candidate_text_color, style: "ic@keyboard_close"}}
+    # - {action: liquid_keyboard_emoji, foreground: {style: "ic@emoticon"}}
+    # - {action: clipboard_window, foreground: {style: "ic@clipboard"}}
+    # - {action: Keyboard_editor, foreground: {style: "ic@cursor_text"}}
+    # - {action: Mode_switch, foreground: {font_size: 12, option_styles: ["CN", "EN"], padding: 10}}
+    # - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}}
   primary_button:
     action: menu_keyboard
     background: {corner_radius: 10, highlight: hilited_candidate_button_color, horizontal_inset: 4, normal: 0x00, type: circle, vertical_inset: 4}
     foreground: {normal: candidate_text_color, padding: 10, style: "ic@dots_horizontal"}
     long_press_action: Settings
+  ascii_mode_button: &ascii_mode_button
+    action: Mode_switch
+    foreground: {font_size: 12, option_styles: ["CN", "EN"], padding: 10}
+  clipboard_button: &clipboard_button
+    action: clipboard_window
+    foreground: {style: "ic@clipboard"}
+  edit_button: &edit_button
+    action: Keyboard_editor
+    foreground: {style: "ic@cursor_text"}
+  emoji_button: &emoji_button
+    action: liquid_keyboard_emoji
+    foreground: {style: "ic@emoticon"}
+  # full_shape_button:
+  #   action: Zenkaku_Hankaku
+  #   foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}
+  hide_button: &hide_button
+    action: Hide
+    foreground: {normal: candidate_text_color, style: "ic@keyboard_close"}
 window:
   foreground:
     comment_font_size: 16
