@@ -1792,11 +1792,14 @@ tool_bar:
   primary_button:
     action: menu_keyboard
     background: {corner_radius: 10, highlight: hilited_candidate_button_color, horizontal_inset: 4, normal: 0x00, type: circle, vertical_inset: 4}
-    foreground: {normal: candidate_text_color, padding: 10, style: "ic@dots_horizontal"}
+    foreground: {normal: candidate_text_color, padding: 8, style: "ic@dots_horizontal"}
     long_press_action: Settings
   ascii_mode_button: &ascii_mode_button
+    foreground: {font_size: 15, option_styles: ["CN", "EN"], padding: 10}      
     action: Mode_switch
-    foreground: {font_size: 12, option_styles: ["CN", "EN"], padding: 10}
+  # ascii_mode_button: &ascii_mode_button
+    # action: Mode_switch
+    # foreground: {font_size: 14, option_styles: ["CN", "EN"], padding: 10}
   clipboard_button: &clipboard_button
     action: clipboard_window
     foreground: {style: "ic@clipboard"}
