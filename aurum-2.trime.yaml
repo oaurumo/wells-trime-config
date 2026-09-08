@@ -551,31 +551,31 @@ preset_keyboards:
     lock: true
     label_transform: lowercase   #键盘字母转化为小写
     keys:
-      - {click: q, long_click: '¹', swipe_left: '¹', swipe_right: '₁', swipe_up: 1, swipe_down: '!', key_back_color: bh1, key_text_color: th1, label_symbol: '1', hint: '!'}
-      - {click: w, long_click: 2, swipe_left: '²', swipe_right: '₂', swipe_up: 2, swipe_down: '@', key_back_color: bh1, key_text_color: th1, label_symbol: '2', hint: '@'}
-      - {click: e, long_click: 3, swipe_left: '³', swipe_right: '₃', swipe_up: 3, swipe_down: '=', key_back_color: bh1, key_text_color: th1, label_symbol: '3', hint: '='}
-      - {click: r, long_click: 4, swipe_left: '⁴', swipe_right: '₄', swipe_up: 4, swipe_down: '$', key_back_color: bh1, key_text_color: th1, label_symbol: '4', hint: '$'}
-      - {click: t, long_click: 5, swipe_left: '⁵', swipe_right: '₅', swipe_up: 5, swipe_down: '%', key_back_color: bh1, key_text_color: th1, label_symbol: '5', hint: '%'}
-      - {click: y, long_click: 6, swipe_left: '⁶', swipe_right: '₆', swipe_up: 6, swipe_down: '^', key_back_color: bh1, key_text_color: th1, label_symbol: '6', hint: '^'}
-      - {click: u, long_click: 7, swipe_left: '⁷', swipe_right: '₇', swipe_up: 7, swipe_down: '&', key_back_color: bh1, key_text_color: th1, label_symbol: '7', hint: '&'}
-      - {click: i, long_click: 8, swipe_left: '⁸', swipe_right: '₈', swipe_up: 8, swipe_down: '*', key_back_color: bh1, key_text_color: th1, label_symbol: '8', hint: '*'}
-      - {click: o, long_click: 9, swipe_left: '⁹', swipe_right: '₉', swipe_up: 9, key_back_color: bh1, key_text_color: th1}
-      - {click: p, long_click: '₀', swipe_left: '⁰', swipe_right: '₀', swipe_up: 0, swipe_down: '#', key_back_color: bh1, key_text_color: th1, label_symbol: '0', hint: '#'}
+      - {click: q, popup: ["¹", "₁", "!"], long_click: '¹', swipe_left: '¹', swipe_right: '₁', swipe_up: 1, swipe_down: '!', key_back_color: bh1, key_text_color: th1, label_symbol: '1', hint: '!'}
+      - {click: w, popup: ["²", "₂", "@"], long_click: 2, swipe_left: '²', swipe_right: '₂', swipe_up: 2, swipe_down: '@', key_back_color: bh1, key_text_color: th1, label_symbol: '2', hint: '@'}
+      - {click: e, popup: ["³", "₃", "="], long_click: 3, swipe_left: '³', swipe_right: '₃', swipe_up: 3, swipe_down: '=', key_back_color: bh1, key_text_color: th1, label_symbol: '3', hint: '='}
+      - {click: r, popup: ["⁴", "₄", "$"], long_click: 4, swipe_left: '⁴', swipe_right: '₄', swipe_up: 4, swipe_down: '$', key_back_color: bh1, key_text_color: th1, label_symbol: '4', hint: '$'}
+      - {click: t, popup: ["⁵", "₅", "%"], long_click: 5, swipe_left: '⁵', swipe_right: '₅', swipe_up: 5, swipe_down: '%', key_back_color: bh1, key_text_color: th1, label_symbol: '5', hint: '%'}
+      - {click: y, popup: ["⁶", "₆", "^"], long_click: 6, swipe_left: '⁶', swipe_right: '₆', swipe_up: 6, swipe_down: '^', key_back_color: bh1, key_text_color: th1, label_symbol: '6', hint: '^'}
+      - {click: u, popup: ["⁷", "₇", "&"], long_click: 7, swipe_left: '⁷', swipe_right: '₇', swipe_up: 7, swipe_down: '&', key_back_color: bh1, key_text_color: th1, label_symbol: '7', hint: '&'}
+      - {click: i, popup: ["⁸", "₈", "*"], long_click: 8, swipe_left: '⁸', swipe_right: '₈', swipe_up: 8, swipe_down: '*', key_back_color: bh1, key_text_color: th1, label_symbol: '8', hint: '*'}
+      - {click: o, popup: ["₉", "₉", ""], long_click: 9, swipe_left: '⁹', swipe_right: '₉', swipe_up: 9, key_back_color: bh1, key_text_color: th1}
+      - {click: p, popup: ["⁰", "₀", "#"], long_click: '₀', swipe_left: '⁰', swipe_right: '₀', swipe_up: 0, swipe_down: '#', key_back_color: bh1, key_text_color: th1, label_symbol: '0', hint: '#'}
       - {width: 5, key_back_color: bh2, key_text_color: th2}
       
       - {click: a, long_click: select_all, key_back_color: bh2, key_text_color: th2}
-      - {click: s, swipe_up: '', swipe_down: '', key_back_color: bh1, key_text_color: th1, label_symbol: '', hint: ''}
+      - {click: s, swipe_up: Wiki, swipe_down: YouDao, key_back_color: bh1, key_text_color: th1, label_symbol: '', hint: ''}
       - {click: d, swipe_up: '/', swipe_down: '\', key_back_color: bh1, key_text_color: th1, label_symbol: '/', hint: '\', swipe_left: '|', swipe_right: '|'}
       - {click: f, swipe_up: '<', swipe_down: '>', key_back_color: bh1, key_text_color: th1, label_symbol: '<', hint: '>'}
       - {click: g, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, label_symbol: '↑', hint: '↓',key_back_color: bkg, key_text_color: tkg}
       - {click: h, swipe_up: '^', swipe_down: '~', key_back_color: bh1, key_text_color: th1, label_symbol: '^', hint: '~'}
       - {click: j, swipe_up: +, swipe_down: '-', key_back_color: bh1, key_text_color: th1, label_symbol: '+', hint: '-'}
-      - {click: k, long_click: '*', swipe_up: '<>{Left}', swipe_down: '(){Left}', swipe_left: '{}{Left}', swipe_right: '[]{Left}', label_symbol: '<>', hint: '()', key_back_color: bh2, key_text_color: th2}
+      - {click: k, popup: ["{}{Left}", "[]{Left}", "<>{Left}", "(){Left}"], long_click: '', swipe_up: '<>{Left}', swipe_down: '(){Left}', swipe_left: '{}{Left}', swipe_right: '[]{Left}', label_symbol: '<>', hint: '()', key_back_color: bh2, key_text_color: th2}
       - {click: l, long_click: "㎥", swipe_up: '㎥', swipe_down: '㎡', label_symbol: '㎥', hint: '㎡',, key_back_color: bh2, key_text_color: th2}
       - {width: 5, key_back_color: bh2, key_text_color: th2}
 
       - {click: Shift_L, composing: delimiter, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
-      - {click: z, long_click: '`', swipe_down: '[]{Left}', key_back_color: bh3, key_text_color: th3}
+      - {click: z, long_click: '', swipe_down: '', key_back_color: bh3, key_text_color: th3}
       - {click: x, long_click: cut, swipe_down: '{}{Left}', key_back_color: bh3, key_text_color: th3}
       - {click: c, long_click: copy, swipe_down: ' ', key_back_color: bh3, key_text_color: th3}
       - {click: v, long_click: paste_clip, swipe_down: paste, key_back_color: bh3, key_text_color: th3}
@@ -587,7 +587,7 @@ preset_keyboards:
       - {click: Keyboard_number, long_click: Menu, width: 12.5, key_back_color: bgn, key_text_color: tgn}
       - {click: Keyboard_bqfh, long_click: Mode_switch, swipe_down: Color_switch, swipe_up: Color_switch, width: 12.5, key_text_size: "18", key_back_color: bgn, key_text_color: tgn}
       - {click: '⋯', label: '⋯', long_click: '', swipe_up: '', key_back_color: bh4, key_text_color: th4}
-      - {click: space, long_click: VOICE_ASSIST, label: '∪', label_symbol: '◎', width: 25, key_back_color: bkg, key_text_color: tkg}
+      - {click: space, long_click: VOICE_ASSIST, label: '␣', label_symbol: 'θ', symbol_text_size: "18", width: 25, key_back_color: bkg, key_text_color: tkg}
       - {click: '.', label: '。', label_symbol: ',', swipe_up: ',', popup: ["Punct_switch"], key_back_color: bh4, key_text_color: th4, swipe_left: '>'}
       - {click: '/', long_click: liquid_keyboard_switch , swipe_down: '\', key_text_size: "18", key_back_color: bh4, key_text_color: th4}
       - {click: Return, composing: Return1, swipe_up: Escape, width: 20, long_click: Hide, key_back_color: bbs, key_text_color: tbs}
@@ -712,13 +712,13 @@ preset_keys:
     send: BRIGHTNESS_UP
   BackSpace:
     functional: false
-    label: '←'
+    label: '⌫'
     preview: "⇦"
     repeatable: true
     send: BackSpace
   BackSpace2:
     functional: false
-    label: "←"
+    label: "⌫"
     preview: "⇦"
     repeatable: true
     send: BackSpace
@@ -808,7 +808,7 @@ preset_keys:
     send: Help
   Henkan:
     send: Mode_switch
-    states: ["漢字", "汉字"]
+    states: ["繁", "简"]
     toggle: simplification
   Hide:
     label: "隐藏"
@@ -1288,16 +1288,16 @@ preset_keys:
   Return:
     functional: false
     # label: enter_labels
-    label: '↲'
+    label: '↩'
     preview: "↩"
     send: Return
   Return1:
     functional: false
-    label: '↲'
+    label: '↩'
     preview: "↩"
     send: Return
   Return2:
-    label: ' ↲ '
+    label: '↩'
     send: Return
   Right:
     functional: false
@@ -1408,54 +1408,51 @@ preset_keys:
     label: "搜索網頁"
     option: "%4$s"
     send: function
-  Wiki:
-    command: run
-    label: "維基"
-    option: "https://zh.wikipedia.org/wiki/%s"
-    send: function
+  Bing: {label: 'bing', send: function, command: run, option: "https://www.bing.com/search?q=%4$s"} #查看網頁: run 網址
+  Wiki: {label: 維基, send: function, command: run, option: "https://zh.wikipedia.org/wiki/%s"} #搜索網頁: %s或者%1$s爲當前字符
   Zcj:
     functional: false
     label: "单字"
     text: "{Home}{Right}{Right}"
-  Zdic:
-    command: run
-    label: "漢典"
-    option: "http://www.zdic.net/sousuo/?q=%1$s"
-    send: function
-  Zdic2:
-    command: run
-    label: "漢典"
-    option: "http://www.zdic.net/sousuo/?q=%2$s"
-    send: function
+  Zdic: {label: 漢典, send: function, command: run, option: "https://zdic.net/search/?q=%1$s"} #搜索網頁: %s或者%1$s爲當前字符
+  YouDao: {label: 'ic@magnify', send: function, command: run, option: "https://dict.youdao.com/result?word=%4$s&lang=en"} #查看網頁: run 網址
   Zenkaku_Hankaku:
     send: Mode_switch
     states: ["半角", "全角"]
     toggle: full_shape
   clipboard_window:
     command: clipboard_window
-    label: " ✄ "
+    label: "🅅"
     # 剪切板
     option: 0
     send: function
   copy:
     functional: false
-    label: "ic@checkbox-multiple-blank-outline"
+    label: "⌘C"
     send: "Control+c"
   cut:
     functional: false
-    label: "ic@content-cut"
+    label: "⌘X"
     send: "Control+x"
+  ctrl_f:
+    functional: false
+    label: "⌘F"
+    send: "Control+f"
+  ctrl_s:
+    functional: false
+    label: "⌘S"
+    send: "Control+s"    
   delimiter:
     label: "分词"
     text: "'"
   liquid_keyboard_emoji:
     command: liquid_keyboard
-    label: "🙂"
+    label: "😉"
     option: emoji
     send: function
   liquid_keyboard_exit:
     command: liquid_keyboard
-    label: " ↙ "
+    label: "⌨"
     option: "-1"
     send: function
   liquid_keyboard_switch:
@@ -1474,11 +1471,11 @@ preset_keys:
     send: function
   paste:
     functional: false
-    label: "ic@clipboard-text-outline"
+    label: "⌘V"
     send: "Control+v"
   paste_clip:
     command: clipboard
-    label: "ic@clipboard-text-outline"
+    label: "⌘V"
     send: function
   paste_text:
     label: "貼上文本"
@@ -1489,21 +1486,21 @@ preset_keys:
     send: "Control+Shift+z"
   select_all:
     functional: false
-    label: "ic@checkbox-marked-outline"
+    label: "⌘A"
     send: "Control+a"
   share_text:
     label: "分享文本"
     send: "Control+Alt+s"
   space:
     functional: false
-    label: "∪"
+    label: "␣"
     preview: " "
     repeatable: false
     send: space
     slide_cursor: true
   space1:
     functional: false
-    label: " ∪ "
+    label: "␣"
     repeatable: false
     send: space
   space_R:
@@ -1749,6 +1746,7 @@ style:
     send: "发送"
   hanb_font: hanb.ttf
   horizontal_gap: 4
+  # hint_size: 12
   key_font: symbol.ttf
   key_height: 48
   key_long_text_size: 16
@@ -1765,13 +1763,18 @@ style:
   popup_key_height: 48
   popup_text_size: 23
   popup_width: 38
+  preview_font: latin.ttf #按键提示字体
+  preview_height: 56 #按键提示高度
+  preview_offset: -32 #按键提示纵向偏移
+  preview_text_size: 40 #按键提示字号
   reset_ascii_mode_on_focus_change: false
   round_corner: 6
   shadow_radius: 0.0
   symbol_font: symbol.ttf
-  symbol_text_size: 10
+  symbol_text_size: 10  #上标字号
   text_font: latin.ttf
   vertical_gap: 12
+ 
 #顶部bar
 tool_bar:
   ascii_mode_button:
