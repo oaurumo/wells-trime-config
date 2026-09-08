@@ -1777,7 +1777,7 @@ style:
  
 #顶部 bar
 tool_bar:
-  button_spacing: 15
+  button_spacing: 5
   back_style: "ic@arrow-left"
   button_font: iconfont.ttf  
   # 右侧按钮列表（从右向左排列）
